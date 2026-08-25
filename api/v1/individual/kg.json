@@ -1,0 +1,7 @@
+{
+  "id": "kg",
+  "name": "kilogram",
+  "symbol": "kg",
+  "quantity": "mass",
+  "definition": "SI base unit of mass."
+}

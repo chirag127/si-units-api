@@ -1,0 +1,7 @@
+{
+  "id": "mol",
+  "name": "mole",
+  "symbol": "mol",
+  "quantity": "amount of substance",
+  "definition": "SI base unit of amount of substance."
+}
