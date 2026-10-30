@@ -1,0 +1,55 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "SI Units and Measurements",
+    "description": "All SI units with symbols, dimensions, and conversion factors",
+    "version": "1.0.0",
+    "license": {
+      "name": "public-domain"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://chirag127.github.io/si-units",
+      "description": "GitHub Pages"
+    }
+  ],
+  "paths": {
+    "/data.json": {
+      "get": {
+        "summary": "SI Units and Measurements data",
+        "description": "All SI units with symbols, dimensions, and conversion factors",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/units": {
+      "get": {
+        "summary": "SI Units and Measurements",
+        "description": "All SI units with symbols, dimensions, and conversion factors",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "m",
+    "name": "metre",
+    "symbol": "m",
+    "quantity": "length",
+    "definition": "SI base unit of length."
+  },
+  {
+    "id": "kg",
+    "name": "kilogram",
+    "symbol": "kg",
+    "quantity": "mass",
+    "definition": "SI base unit of mass."
+  },
+  {
+    "id": "s",
+    "name": "second",
+    "symbol": "s",
+    "quantity": "time",
+    "definition": "SI base unit of time."
+  },
+  {
+    "id": "A",
+    "name": "ampere",
+    "symbol": "A",
+    "quantity": "electric current",
+    "definition": "SI base unit of electric current."
+  },
+  {
+    "id": "K",
+    "name": "kelvin",
+    "symbol": "K",
+    "quantity": "temperature",
+    "definition": "SI base unit of thermodynamic temperature."
+  },
+  {
+    "id": "mol",
+    "name": "mole",
+    "symbol": "mol",
+    "quantity": "amount of substance",
+    "definition": "SI base unit of amount of substance."
+  },
+  {
+    "id": "cd",
+    "name": "candela",
+    "symbol": "cd",
+    "quantity": "luminous intensity",
+    "definition": "SI base unit of luminous intensity."
+  }
+]

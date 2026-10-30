@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chirag127.github.io/si-units/data/schema.json",
+  "title": "SI Units and Measurements",
+  "description": "All SI units with symbols, dimensions, and conversion factors",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier"
+      },
+      "name": {
+        "type": "string",
+        "description": "Display name"
+      }
+    }
+  }
+}
