@@ -1,31 +1,39 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "SI Units and Measurements",
-    "description": "All SI units with symbols, dimensions, and conversion factors",
+    "title": "SI Units",
+    "description": "The 29 SI units that have their own name — the 7 base units and the 22 derived units with special names — each with its symbol, quantity, dimension, expression in base units, and the 2019 BIPM definition verbatim.",
     "version": "1.0.0",
     "license": {
-      "name": "public-domain"
+      "name": "CC-BY-4.0 (BIPM SI brochure)"
+    },
+    "contact": {
+      "name": "Chirag Singhal",
+      "url": "https://github.com/chirag127",
+      "email": "chirag@oriz.in"
     }
   },
   "servers": [
     {
-      "url": "https://chirag127.github.io/si-units",
+      "url": "https://chirag127.github.io/si-units-api",
       "description": "GitHub Pages"
     }
   ],
   "paths": {
-    "/data.json": {
+    "/api/v1/data.json": {
       "get": {
-        "summary": "SI Units and Measurements data",
-        "description": "All SI units with symbols, dimensions, and conversion factors",
+        "summary": "All 29 SI units",
+        "operationId": "listData",
         "responses": {
           "200": {
-            "description": "JSON response",
+            "description": "JSON array of 29 records",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SiUnit"
+                  }
                 }
               }
             }
@@ -33,22 +41,209 @@
         }
       }
     },
-    "/data/units": {
+    "/api/v1/individual/{id}.json": {
       "get": {
-        "summary": "SI Units and Measurements",
-        "description": "All SI units with symbols, dimensions, and conversion factors",
+        "summary": "One record by id",
+        "operationId": "getRecord",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Record id"
+          }
+        ],
         "responses": {
           "200": {
-            "description": "JSON response",
+            "description": "One record",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array"
+                  "$ref": "#/components/schemas/SiUnit"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No record with that id"
+          }
+        }
+      }
+    },
+    "/api/v1/search-index.json": {
+      "get": {
+        "summary": "All records keyed by id",
+        "operationId": "getSearchIndex",
+        "responses": {
+          "200": {
+            "description": "Object with a byId map of every record",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "byId": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "$ref": "#/components/schemas/SiUnit"
+                      }
+                    }
+                  },
+                  "required": [
+                    "byId"
+                  ]
                 }
               }
             }
           }
         }
+      }
+    },
+    "/api/v1/meta.json": {
+      "get": {
+        "summary": "Dataset metadata",
+        "operationId": "getMeta",
+        "responses": {
+          "200": {
+            "description": "Record count, source URLs, retrieval time",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "lastUpdated": {
+                      "type": "string"
+                    },
+                    "sourceUpdatedAt": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "retrievedAt": {
+                      "type": "string"
+                    },
+                    "recordCount": {
+                      "type": "integer"
+                    },
+                    "version": {
+                      "type": "string"
+                    },
+                    "schemaVersion": {
+                      "type": "string"
+                    },
+                    "source": {
+                      "type": "string"
+                    },
+                    "sourceUrl": {
+                      "type": "string"
+                    },
+                    "license": {
+                      "type": "string"
+                    },
+                    "updateCadence": {
+                      "type": "string"
+                    },
+                    "nextUpdateDue": {
+                      "type": "string"
+                    },
+                    "lastFailedAt": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "failureReason": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SiUnit": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "symbol",
+          "kind",
+          "quantity",
+          "dimension",
+          "derivation",
+          "baseUnits",
+          "definition"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "URL-safe identifier: the symbol, except ohm, degC and siemens",
+            "example": "m"
+          },
+          "name": {
+            "type": "string",
+            "description": "Unit name as the SI brochure writes it",
+            "example": "metre"
+          },
+          "symbol": {
+            "type": "string",
+            "description": "The symbol, including °C and Ω",
+            "example": "m"
+          },
+          "kind": {
+            "type": "string",
+            "description": "Base unit or derived unit",
+            "example": "base",
+            "enum": [
+              "base",
+              "derived"
+            ]
+          },
+          "quantity": {
+            "type": "string",
+            "description": "The quantity the unit measures",
+            "example": "length"
+          },
+          "dimension": {
+            "type": "string",
+            "description": "Dimension in the seven base dimensions",
+            "example": "L"
+          },
+          "derivation": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Expression in other SI units; null for base units",
+            "example": "N/m²"
+          },
+          "baseUnits": {
+            "type": "string",
+            "description": "Expression in SI base units",
+            "example": "kg m⁻¹ s⁻²"
+          },
+          "definition": {
+            "type": "string",
+            "description": "The defining text, BIPM SI brochure 9th edition",
+            "example": "The metre, symbol m, is the SI unit of length. …"
+          }
+        },
+        "additionalProperties": false
       }
     }
   }

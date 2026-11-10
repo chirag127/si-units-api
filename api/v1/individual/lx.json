@@ -1,0 +1,11 @@
+{
+  "id": "lx",
+  "name": "lux",
+  "symbol": "lx",
+  "kind": "derived",
+  "quantity": "illuminance",
+  "dimension": "J L⁻²",
+  "derivation": "lm/m²",
+  "baseUnits": "cd sr m⁻²",
+  "definition": "The lux is the unit of illuminance. One lux is one lumen per square metre."
+}

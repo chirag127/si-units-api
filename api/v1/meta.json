@@ -1,15 +1,16 @@
 {
   "status": "healthy",
-  "lastUpdated": "2026-08-25T13:59:37.076Z",
-  "sourceUpdatedAt": "2026-08-25T13:59:37.076Z",
-  "retrievedAt": "2026-08-25T13:59:37.076Z",
-  "recordCount": 7,
+  "lastUpdated": "2026-11-10T18:22:56Z",
+  "sourceUpdatedAt": "2019-05-20T00:00:00.000Z",
+  "retrievedAt": "2026-11-10T18:22:56Z",
+  "recordCount": 29,
   "version": "1.0.0",
   "schemaVersion": "1.0.0",
-  "source": "BIPM",
-  "license": "public-domain",
+  "source": "BIPM SI Brochure, 9th edition (2019)",
+  "sourceUrl": "https://www.bipm.org/en/publications/si-brochure",
+  "license": "CC-BY-4.0 (BIPM SI brochure)",
   "updateCadence": "manual",
-  "nextUpdateDue": "2026-11-23T13:59:37.076Z",
+  "nextUpdateDue": "2027-11-10T18:22:56.000Z",
   "lastFailedAt": null,
   "failureReason": null
 }

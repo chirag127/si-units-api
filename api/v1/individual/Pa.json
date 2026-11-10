@@ -1,0 +1,11 @@
+{
+  "id": "Pa",
+  "name": "pascal",
+  "symbol": "Pa",
+  "kind": "derived",
+  "quantity": "pressure, stress",
+  "dimension": "M L⁻¹ T⁻²",
+  "derivation": "N/m²",
+  "baseUnits": "kg m⁻¹ s⁻²",
+  "definition": "The pascal is the unit of pressure and stress. One pascal is one newton per square metre."
+}

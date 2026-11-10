@@ -1,0 +1,11 @@
+{
+  "id": "kat",
+  "name": "katal",
+  "symbol": "kat",
+  "kind": "derived",
+  "quantity": "catalytic activity",
+  "dimension": "N T⁻¹",
+  "derivation": "mol/s",
+  "baseUnits": "mol s⁻¹",
+  "definition": "The katal is the unit of catalytic activity. One katal is the catalytic activity of a catalyst that converts one mole of substrate per second."
+}

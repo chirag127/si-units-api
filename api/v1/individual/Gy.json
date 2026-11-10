@@ -1,0 +1,11 @@
+{
+  "id": "Gy",
+  "name": "gray",
+  "symbol": "Gy",
+  "kind": "derived",
+  "quantity": "absorbed dose, kerma, specific energy imparted",
+  "dimension": "L² T⁻²",
+  "derivation": "J/kg",
+  "baseUnits": "m² s⁻²",
+  "definition": "The gray is the unit of absorbed dose, kerma and specific energy imparted. One gray is one joule per kilogram."
+}

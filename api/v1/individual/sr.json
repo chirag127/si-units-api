@@ -1,0 +1,11 @@
+{
+  "id": "sr",
+  "name": "steradian",
+  "symbol": "sr",
+  "kind": "derived",
+  "quantity": "solid angle",
+  "dimension": "1",
+  "derivation": "m²/m²",
+  "baseUnits": "m²/m²",
+  "definition": "The steradian is the coherent derived unit for solid angle. One steradian is the solid angle subtended at the centre of a sphere by an area of surface equal to the square of the radius."
+}

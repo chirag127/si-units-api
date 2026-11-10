@@ -1,0 +1,11 @@
+{
+  "id": "J",
+  "name": "joule",
+  "symbol": "J",
+  "kind": "derived",
+  "quantity": "energy, work, amount of heat",
+  "dimension": "M L² T⁻²",
+  "derivation": "N m",
+  "baseUnits": "kg m² s⁻²",
+  "definition": "The joule is the unit of energy, work and amount of heat. One joule is the work done when a force of one newton moves its point of application by one metre."
+}

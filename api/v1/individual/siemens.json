@@ -1,0 +1,11 @@
+{
+  "id": "siemens",
+  "name": "siemens",
+  "symbol": "S",
+  "kind": "derived",
+  "quantity": "electric conductance",
+  "dimension": "M⁻¹ L⁻² T³ I²",
+  "derivation": "A/V",
+  "baseUnits": "kg⁻¹ m⁻² s³ A²",
+  "definition": "The siemens is the unit of electric conductance. One siemens is the conductance of a conductor in which a current of one ampere is produced by a potential difference of one volt."
+}

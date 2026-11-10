@@ -1,0 +1,11 @@
+{
+  "id": "N",
+  "name": "newton",
+  "symbol": "N",
+  "kind": "derived",
+  "quantity": "force",
+  "dimension": "M L T⁻²",
+  "derivation": "kg m s⁻²",
+  "baseUnits": "kg m s⁻²",
+  "definition": "The newton is the unit of force. One newton is the force that gives to a mass of one kilogram an acceleration of one metre per second squared."
+}

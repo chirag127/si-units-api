@@ -1,0 +1,11 @@
+{
+  "id": "rad",
+  "name": "radian",
+  "symbol": "rad",
+  "kind": "derived",
+  "quantity": "plane angle",
+  "dimension": "1",
+  "derivation": "m/m",
+  "baseUnits": "m/m",
+  "definition": "The radian is the coherent derived unit for plane angle. One radian is the angle subtended at the centre of a circle by an arc that is equal in length to the radius."
+}

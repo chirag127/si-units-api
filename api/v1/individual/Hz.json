@@ -1,0 +1,11 @@
+{
+  "id": "Hz",
+  "name": "hertz",
+  "symbol": "Hz",
+  "kind": "derived",
+  "quantity": "frequency",
+  "dimension": "T⁻¹",
+  "derivation": "s⁻¹",
+  "baseUnits": "s⁻¹",
+  "definition": "The hertz is the unit of frequency. One hertz is one cycle per second."
+}

@@ -4,51 +4,320 @@
       "id": "m",
       "name": "metre",
       "symbol": "m",
+      "kind": "base",
       "quantity": "length",
-      "definition": "SI base unit of length."
-    },
-    "kg": {
-      "id": "kg",
-      "name": "kilogram",
-      "symbol": "kg",
-      "quantity": "mass",
-      "definition": "SI base unit of mass."
+      "dimension": "L",
+      "derivation": null,
+      "baseUnits": "m",
+      "definition": "The metre, symbol m, is the SI unit of length. It is defined by taking the fixed numerical value of the speed of light in vacuum c to be 299 792 458 when expressed in the unit m/s, where the second is defined in terms of the caesium frequency ΔνCs."
     },
     "s": {
       "id": "s",
       "name": "second",
       "symbol": "s",
+      "kind": "base",
       "quantity": "time",
-      "definition": "SI base unit of time."
+      "dimension": "T",
+      "derivation": null,
+      "baseUnits": "s",
+      "definition": "The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency ΔνCs, the unperturbed ground-state hyperfine transition frequency of the caesium-133 atom, to be 9 192 631 770 when expressed in the unit Hz, which is equal to s⁻¹."
+    },
+    "kg": {
+      "id": "kg",
+      "name": "kilogram",
+      "symbol": "kg",
+      "kind": "base",
+      "quantity": "mass",
+      "dimension": "M",
+      "derivation": null,
+      "baseUnits": "kg",
+      "definition": "The kilogram, symbol kg, is the SI unit of mass. It is defined by taking the fixed numerical value of the Planck constant h to be 6.626 070 15 × 10⁻³⁴ when expressed in the unit J s, which is equal to kg m² s⁻¹, where the metre and the second are defined in terms of c and ΔνCs."
     },
     "A": {
       "id": "A",
       "name": "ampere",
       "symbol": "A",
+      "kind": "base",
       "quantity": "electric current",
-      "definition": "SI base unit of electric current."
+      "dimension": "I",
+      "derivation": null,
+      "baseUnits": "A",
+      "definition": "The ampere, symbol A, is the SI unit of electric current. It is defined by taking the fixed numerical value of the elementary charge e to be 1.602 176 634 × 10⁻¹⁹ when expressed in the unit C, which is equal to A s, where the second is defined in terms of ΔνCs."
     },
     "K": {
       "id": "K",
       "name": "kelvin",
       "symbol": "K",
-      "quantity": "temperature",
-      "definition": "SI base unit of thermodynamic temperature."
+      "kind": "base",
+      "quantity": "thermodynamic temperature",
+      "dimension": "Θ",
+      "derivation": null,
+      "baseUnits": "K",
+      "definition": "The kelvin, symbol K, is the SI unit of thermodynamic temperature. It is defined by taking the fixed numerical value of the Boltzmann constant k to be 1.380 649 × 10⁻²³ when expressed in the unit J K⁻¹, which is equal to kg m² s⁻² K⁻¹, where the kilogram, metre and second are defined in terms of h, c and ΔνCs."
     },
     "mol": {
       "id": "mol",
       "name": "mole",
       "symbol": "mol",
+      "kind": "base",
       "quantity": "amount of substance",
-      "definition": "SI base unit of amount of substance."
+      "dimension": "N",
+      "derivation": null,
+      "baseUnits": "mol",
+      "definition": "The mole, symbol mol, is the SI unit of amount of substance. One mole contains exactly 6.022 140 76 × 10²³ elementary entities. This number is the fixed numerical value of the Avogadro constant N_A when expressed in the unit mol⁻¹ and is called the Avogadro number."
     },
     "cd": {
       "id": "cd",
       "name": "candela",
       "symbol": "cd",
+      "kind": "base",
       "quantity": "luminous intensity",
-      "definition": "SI base unit of luminous intensity."
+      "dimension": "J",
+      "derivation": null,
+      "baseUnits": "cd",
+      "definition": "The candela, symbol cd, is the SI unit of luminous intensity in a given direction. It is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540 × 10¹² Hz, K_cd, to be 683 when expressed in the unit lm W⁻¹, which is equal to cd sr W⁻¹, or cd sr kg⁻¹ m⁻² s³, where the kilogram, metre and second are defined in terms of h, c and ΔνCs."
+    },
+    "rad": {
+      "id": "rad",
+      "name": "radian",
+      "symbol": "rad",
+      "kind": "derived",
+      "quantity": "plane angle",
+      "dimension": "1",
+      "derivation": "m/m",
+      "baseUnits": "m/m",
+      "definition": "The radian is the coherent derived unit for plane angle. One radian is the angle subtended at the centre of a circle by an arc that is equal in length to the radius."
+    },
+    "sr": {
+      "id": "sr",
+      "name": "steradian",
+      "symbol": "sr",
+      "kind": "derived",
+      "quantity": "solid angle",
+      "dimension": "1",
+      "derivation": "m²/m²",
+      "baseUnits": "m²/m²",
+      "definition": "The steradian is the coherent derived unit for solid angle. One steradian is the solid angle subtended at the centre of a sphere by an area of surface equal to the square of the radius."
+    },
+    "Hz": {
+      "id": "Hz",
+      "name": "hertz",
+      "symbol": "Hz",
+      "kind": "derived",
+      "quantity": "frequency",
+      "dimension": "T⁻¹",
+      "derivation": "s⁻¹",
+      "baseUnits": "s⁻¹",
+      "definition": "The hertz is the unit of frequency. One hertz is one cycle per second."
+    },
+    "N": {
+      "id": "N",
+      "name": "newton",
+      "symbol": "N",
+      "kind": "derived",
+      "quantity": "force",
+      "dimension": "M L T⁻²",
+      "derivation": "kg m s⁻²",
+      "baseUnits": "kg m s⁻²",
+      "definition": "The newton is the unit of force. One newton is the force that gives to a mass of one kilogram an acceleration of one metre per second squared."
+    },
+    "Pa": {
+      "id": "Pa",
+      "name": "pascal",
+      "symbol": "Pa",
+      "kind": "derived",
+      "quantity": "pressure, stress",
+      "dimension": "M L⁻¹ T⁻²",
+      "derivation": "N/m²",
+      "baseUnits": "kg m⁻¹ s⁻²",
+      "definition": "The pascal is the unit of pressure and stress. One pascal is one newton per square metre."
+    },
+    "J": {
+      "id": "J",
+      "name": "joule",
+      "symbol": "J",
+      "kind": "derived",
+      "quantity": "energy, work, amount of heat",
+      "dimension": "M L² T⁻²",
+      "derivation": "N m",
+      "baseUnits": "kg m² s⁻²",
+      "definition": "The joule is the unit of energy, work and amount of heat. One joule is the work done when a force of one newton moves its point of application by one metre."
+    },
+    "W": {
+      "id": "W",
+      "name": "watt",
+      "symbol": "W",
+      "kind": "derived",
+      "quantity": "power, radiant flux",
+      "dimension": "M L² T⁻³",
+      "derivation": "J/s",
+      "baseUnits": "kg m² s⁻³",
+      "definition": "The watt is the unit of power and radiant flux. One watt is one joule per second."
+    },
+    "C": {
+      "id": "C",
+      "name": "coulomb",
+      "symbol": "C",
+      "kind": "derived",
+      "quantity": "electric charge",
+      "dimension": "T I",
+      "derivation": "A s",
+      "baseUnits": "A s",
+      "definition": "The coulomb is the unit of electric charge. One coulomb is the charge transported by a current of one ampere in one second."
+    },
+    "V": {
+      "id": "V",
+      "name": "volt",
+      "symbol": "V",
+      "kind": "derived",
+      "quantity": "electric potential difference, electromotive force",
+      "dimension": "M L² T⁻³ I⁻¹",
+      "derivation": "W/A",
+      "baseUnits": "kg m² s⁻³ A⁻¹",
+      "definition": "The volt is the unit of electric potential difference and electromotive force. One volt is the potential difference between two points of a conducting wire carrying a constant current of one ampere when the power dissipated between these points is one watt."
+    },
+    "F": {
+      "id": "F",
+      "name": "farad",
+      "symbol": "F",
+      "kind": "derived",
+      "quantity": "capacitance",
+      "dimension": "M⁻¹ L⁻² T⁴ I²",
+      "derivation": "C/V",
+      "baseUnits": "kg⁻¹ m⁻² s⁴ A²",
+      "definition": "The farad is the unit of capacitance. One farad is the capacitance of a capacitor between whose plates a potential difference of one volt appears when it is charged with one coulomb."
+    },
+    "ohm": {
+      "id": "ohm",
+      "name": "ohm",
+      "symbol": "Ω",
+      "kind": "derived",
+      "quantity": "electric resistance",
+      "dimension": "M L² T⁻³ I⁻²",
+      "derivation": "V/A",
+      "baseUnits": "kg m² s⁻³ A⁻²",
+      "definition": "The ohm is the unit of electric resistance. One ohm is the resistance between two points of a conductor when a potential difference of one volt produces a current of one ampere."
+    },
+    "siemens": {
+      "id": "siemens",
+      "name": "siemens",
+      "symbol": "S",
+      "kind": "derived",
+      "quantity": "electric conductance",
+      "dimension": "M⁻¹ L⁻² T³ I²",
+      "derivation": "A/V",
+      "baseUnits": "kg⁻¹ m⁻² s³ A²",
+      "definition": "The siemens is the unit of electric conductance. One siemens is the conductance of a conductor in which a current of one ampere is produced by a potential difference of one volt."
+    },
+    "Wb": {
+      "id": "Wb",
+      "name": "weber",
+      "symbol": "Wb",
+      "kind": "derived",
+      "quantity": "magnetic flux",
+      "dimension": "M L² T⁻² I⁻¹",
+      "derivation": "V s",
+      "baseUnits": "kg m² s⁻² A⁻¹",
+      "definition": "The weber is the unit of magnetic flux. One weber is the magnetic flux which, linking a circuit of one turn, produces in it an electromotive force of one volt as it is reduced to zero in one second."
+    },
+    "T": {
+      "id": "T",
+      "name": "tesla",
+      "symbol": "T",
+      "kind": "derived",
+      "quantity": "magnetic flux density",
+      "dimension": "M T⁻² I⁻¹",
+      "derivation": "Wb/m²",
+      "baseUnits": "kg s⁻² A⁻¹",
+      "definition": "The tesla is the unit of magnetic flux density. One tesla is one weber per square metre."
+    },
+    "H": {
+      "id": "H",
+      "name": "henry",
+      "symbol": "H",
+      "kind": "derived",
+      "quantity": "inductance",
+      "dimension": "M L² T⁻² I⁻²",
+      "derivation": "Wb/A",
+      "baseUnits": "kg m² s⁻² A⁻²",
+      "definition": "The henry is the unit of inductance. One henry is the inductance of a closed circuit in which an electromotive force of one volt is produced when the electric current in the circuit varies uniformly at a rate of one ampere per second."
+    },
+    "degC": {
+      "id": "degC",
+      "name": "degree Celsius",
+      "symbol": "°C",
+      "kind": "derived",
+      "quantity": "Celsius temperature",
+      "dimension": "Θ",
+      "derivation": "K",
+      "baseUnits": "K",
+      "definition": "The degree Celsius is the unit of Celsius temperature. It is equal in magnitude to the kelvin: t/°C = T/K − 273.15, where t is the Celsius temperature and T the thermodynamic temperature."
+    },
+    "lm": {
+      "id": "lm",
+      "name": "lumen",
+      "symbol": "lm",
+      "kind": "derived",
+      "quantity": "luminous flux",
+      "dimension": "J",
+      "derivation": "cd sr",
+      "baseUnits": "cd sr",
+      "definition": "The lumen is the unit of luminous flux. One lumen is the luminous flux emitted in a unit solid angle by a point source of luminous intensity one candela."
+    },
+    "lx": {
+      "id": "lx",
+      "name": "lux",
+      "symbol": "lx",
+      "kind": "derived",
+      "quantity": "illuminance",
+      "dimension": "J L⁻²",
+      "derivation": "lm/m²",
+      "baseUnits": "cd sr m⁻²",
+      "definition": "The lux is the unit of illuminance. One lux is one lumen per square metre."
+    },
+    "Bq": {
+      "id": "Bq",
+      "name": "becquerel",
+      "symbol": "Bq",
+      "kind": "derived",
+      "quantity": "activity referred to a radionuclide",
+      "dimension": "T⁻¹",
+      "derivation": "s⁻¹",
+      "baseUnits": "s⁻¹",
+      "definition": "The becquerel is the unit of activity referred to a radionuclide. One becquerel is the activity of a quantity of radioactive material in which one nucleus decays per second."
+    },
+    "Gy": {
+      "id": "Gy",
+      "name": "gray",
+      "symbol": "Gy",
+      "kind": "derived",
+      "quantity": "absorbed dose, kerma, specific energy imparted",
+      "dimension": "L² T⁻²",
+      "derivation": "J/kg",
+      "baseUnits": "m² s⁻²",
+      "definition": "The gray is the unit of absorbed dose, kerma and specific energy imparted. One gray is one joule per kilogram."
+    },
+    "Sv": {
+      "id": "Sv",
+      "name": "sievert",
+      "symbol": "Sv",
+      "kind": "derived",
+      "quantity": "dose equivalent, equivalent dose",
+      "dimension": "L² T⁻²",
+      "derivation": "J/kg",
+      "baseUnits": "m² s⁻²",
+      "definition": "The sievert is the unit of dose equivalent and of the quantities derived from it. One sievert is one joule per kilogram."
+    },
+    "kat": {
+      "id": "kat",
+      "name": "katal",
+      "symbol": "kat",
+      "kind": "derived",
+      "quantity": "catalytic activity",
+      "dimension": "N T⁻¹",
+      "derivation": "mol/s",
+      "baseUnits": "mol s⁻¹",
+      "definition": "The katal is the unit of catalytic activity. One katal is the catalytic activity of a catalyst that converts one mole of substrate per second."
     }
-  },
-  "searchableFields": []
+  }
 }

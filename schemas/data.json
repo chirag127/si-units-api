@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://chirag127.github.io/si-units-and-measurements/schemas/data.json",
-  "title": "SI Units and Measurements",
+  "title": "SI Units",
+  "description": "The 29 SI units that have their own name — the 7 base units and the 22 derived units with special names — each with its symbol, quantity, dimension, expression in base units, and the 2019 BIPM definition verbatim.",
   "type": "array",
   "items": {
     "type": "object",
@@ -9,26 +9,68 @@
       "id",
       "name",
       "symbol",
+      "kind",
       "quantity",
+      "dimension",
+      "derivation",
+      "baseUnits",
       "definition"
     ],
     "properties": {
       "id": {
         "type": "string",
-        "pattern": "^[A-Z0-9-]+$"
+        "description": "URL-safe identifier: the symbol, except ohm, degC and siemens",
+        "example": "m"
       },
       "name": {
-        "type": "string"
+        "type": "string",
+        "description": "Unit name as the SI brochure writes it",
+        "example": "metre"
       },
       "symbol": {
-        "type": "string"
+        "type": "string",
+        "description": "The symbol, including °C and Ω",
+        "example": "m"
+      },
+      "kind": {
+        "type": "string",
+        "description": "Base unit or derived unit",
+        "example": "base",
+        "enum": [
+          "base",
+          "derived"
+        ]
       },
       "quantity": {
-        "type": "string"
+        "type": "string",
+        "description": "The quantity the unit measures",
+        "example": "length"
+      },
+      "dimension": {
+        "type": "string",
+        "description": "Dimension in the seven base dimensions",
+        "example": "L"
+      },
+      "derivation": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Expression in other SI units; null for base units",
+        "example": "N/m²"
+      },
+      "baseUnits": {
+        "type": "string",
+        "description": "Expression in SI base units",
+        "example": "kg m⁻¹ s⁻²"
       },
       "definition": {
-        "type": "string"
+        "type": "string",
+        "description": "The defining text, BIPM SI brochure 9th edition",
+        "example": "The metre, symbol m, is the SI unit of length. …"
       }
-    }
-  }
+    },
+    "additionalProperties": false
+  },
+  "$id": "https://chirag127.github.io/si-units/schemas/data.json"
 }

@@ -1,0 +1,11 @@
+{
+  "id": "C",
+  "name": "coulomb",
+  "symbol": "C",
+  "kind": "derived",
+  "quantity": "electric charge",
+  "dimension": "T I",
+  "derivation": "A s",
+  "baseUnits": "A s",
+  "definition": "The coulomb is the unit of electric charge. One coulomb is the charge transported by a current of one ampere in one second."
+}

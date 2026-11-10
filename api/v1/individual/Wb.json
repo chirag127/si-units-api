@@ -1,0 +1,11 @@
+{
+  "id": "Wb",
+  "name": "weber",
+  "symbol": "Wb",
+  "kind": "derived",
+  "quantity": "magnetic flux",
+  "dimension": "M L² T⁻² I⁻¹",
+  "derivation": "V s",
+  "baseUnits": "kg m² s⁻² A⁻¹",
+  "definition": "The weber is the unit of magnetic flux. One weber is the magnetic flux which, linking a circuit of one turn, produces in it an electromotive force of one volt as it is reduced to zero in one second."
+}

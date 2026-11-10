@@ -2,6 +2,10 @@
   "id": "mol",
   "name": "mole",
   "symbol": "mol",
+  "kind": "base",
   "quantity": "amount of substance",
-  "definition": "SI base unit of amount of substance."
+  "dimension": "N",
+  "derivation": null,
+  "baseUnits": "mol",
+  "definition": "The mole, symbol mol, is the SI unit of amount of substance. One mole contains exactly 6.022 140 76 × 10²³ elementary entities. This number is the fixed numerical value of the Avogadro constant N_A when expressed in the unit mol⁻¹ and is called the Avogadro number."
 }

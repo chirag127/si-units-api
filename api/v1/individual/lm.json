@@ -1,0 +1,11 @@
+{
+  "id": "lm",
+  "name": "lumen",
+  "symbol": "lm",
+  "kind": "derived",
+  "quantity": "luminous flux",
+  "dimension": "J",
+  "derivation": "cd sr",
+  "baseUnits": "cd sr",
+  "definition": "The lumen is the unit of luminous flux. One lumen is the luminous flux emitted in a unit solid angle by a point source of luminous intensity one candela."
+}

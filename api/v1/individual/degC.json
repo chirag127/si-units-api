@@ -1,0 +1,11 @@
+{
+  "id": "degC",
+  "name": "degree Celsius",
+  "symbol": "°C",
+  "kind": "derived",
+  "quantity": "Celsius temperature",
+  "dimension": "Θ",
+  "derivation": "K",
+  "baseUnits": "K",
+  "definition": "The degree Celsius is the unit of Celsius temperature. It is equal in magnitude to the kelvin: t/°C = T/K − 273.15, where t is the Celsius temperature and T the thermodynamic temperature."
+}

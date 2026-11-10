@@ -1,0 +1,11 @@
+{
+  "id": "F",
+  "name": "farad",
+  "symbol": "F",
+  "kind": "derived",
+  "quantity": "capacitance",
+  "dimension": "M⁻¹ L⁻² T⁴ I²",
+  "derivation": "C/V",
+  "baseUnits": "kg⁻¹ m⁻² s⁴ A²",
+  "definition": "The farad is the unit of capacitance. One farad is the capacitance of a capacitor between whose plates a potential difference of one volt appears when it is charged with one coulomb."
+}

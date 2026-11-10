@@ -1,0 +1,11 @@
+{
+  "id": "V",
+  "name": "volt",
+  "symbol": "V",
+  "kind": "derived",
+  "quantity": "electric potential difference, electromotive force",
+  "dimension": "M L² T⁻³ I⁻¹",
+  "derivation": "W/A",
+  "baseUnits": "kg m² s⁻³ A⁻¹",
+  "definition": "The volt is the unit of electric potential difference and electromotive force. One volt is the potential difference between two points of a conducting wire carrying a constant current of one ampere when the power dissipated between these points is one watt."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "T",
+  "name": "tesla",
+  "symbol": "T",
+  "kind": "derived",
+  "quantity": "magnetic flux density",
+  "dimension": "M T⁻² I⁻¹",
+  "derivation": "Wb/m²",
+  "baseUnits": "kg s⁻² A⁻¹",
+  "definition": "The tesla is the unit of magnetic flux density. One tesla is one weber per square metre."
+}

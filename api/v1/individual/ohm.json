@@ -1,0 +1,11 @@
+{
+  "id": "ohm",
+  "name": "ohm",
+  "symbol": "Ω",
+  "kind": "derived",
+  "quantity": "electric resistance",
+  "dimension": "M L² T⁻³ I⁻²",
+  "derivation": "V/A",
+  "baseUnits": "kg m² s⁻³ A⁻²",
+  "definition": "The ohm is the unit of electric resistance. One ohm is the resistance between two points of a conductor when a potential difference of one volt produces a current of one ampere."
+}

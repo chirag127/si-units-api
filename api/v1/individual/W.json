@@ -1,0 +1,11 @@
+{
+  "id": "W",
+  "name": "watt",
+  "symbol": "W",
+  "kind": "derived",
+  "quantity": "power, radiant flux",
+  "dimension": "M L² T⁻³",
+  "derivation": "J/s",
+  "baseUnits": "kg m² s⁻³",
+  "definition": "The watt is the unit of power and radiant flux. One watt is one joule per second."
+}

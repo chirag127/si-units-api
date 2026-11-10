@@ -1,0 +1,11 @@
+{
+  "id": "Bq",
+  "name": "becquerel",
+  "symbol": "Bq",
+  "kind": "derived",
+  "quantity": "activity referred to a radionuclide",
+  "dimension": "T⁻¹",
+  "derivation": "s⁻¹",
+  "baseUnits": "s⁻¹",
+  "definition": "The becquerel is the unit of activity referred to a radionuclide. One becquerel is the activity of a quantity of radioactive material in which one nucleus decays per second."
+}

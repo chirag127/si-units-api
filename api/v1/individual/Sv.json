@@ -1,0 +1,11 @@
+{
+  "id": "Sv",
+  "name": "sievert",
+  "symbol": "Sv",
+  "kind": "derived",
+  "quantity": "dose equivalent, equivalent dose",
+  "dimension": "L² T⁻²",
+  "derivation": "J/kg",
+  "baseUnits": "m² s⁻²",
+  "definition": "The sievert is the unit of dose equivalent and of the quantities derived from it. One sievert is one joule per kilogram."
+}

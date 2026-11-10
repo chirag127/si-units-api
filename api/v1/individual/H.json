@@ -1,0 +1,11 @@
+{
+  "id": "H",
+  "name": "henry",
+  "symbol": "H",
+  "kind": "derived",
+  "quantity": "inductance",
+  "dimension": "M L² T⁻² I⁻²",
+  "derivation": "Wb/A",
+  "baseUnits": "kg m² s⁻² A⁻²",
+  "definition": "The henry is the unit of inductance. One henry is the inductance of a closed circuit in which an electromotive force of one volt is produced when the electric current in the circuit varies uniformly at a rate of one ampere per second."
+}
